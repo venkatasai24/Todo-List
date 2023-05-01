@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://venkatasai24042004:PlBtdPBaTwUugI4S@cluster0.s6se6mz.mongodb.net/todolistDB",{useNewUrlParser:true});
 
 const itemschema = new mongoose.Schema({
   name : String 
